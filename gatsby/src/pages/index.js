@@ -26,4 +26,9 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default IndexPage;
+
+
+import GlobalStyle from 'components/Common/GlobalStyle';
+import Footer from 'components/Common/Footer';
+import Introduction from 'components/Main/Introduction';
