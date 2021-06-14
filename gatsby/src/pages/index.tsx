@@ -1,8 +1,6 @@
-import React, { FunctionComponent } from 'react';
-import styled from '@emotion/styled';
-import GlobalStyle from 'components/Common/GlobalStyle';
-import Footer from 'components/Common/Footer';
-import CategoryList from 'components/Main/CategoryList';
+import React, { FunctionComponent, useMemo } from 'react';
+import Template from 'components/Common/Template';
+import CategoryList, { CategoryListProps } from 'components/Main/CategoryList';
 import Introduction from 'components/Main/Introduction';
 import PostList, { PostType } from 'components/Main/PostList';
 import { ProfileImageProps } from 'components/Main/ProfileImage';
@@ -24,12 +22,6 @@ interface IndexPageProps {
     };
   };
 }
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-`;
 
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
   location: { search },
@@ -72,19 +64,16 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
   );
 
   return (
-    <Container>
-      <GlobalStyle />
+    <Template>
       <Introduction profileImage={fluid} />
       <CategoryList
         selectedCategory={selectedCategory}
         categoryList={categoryList}
       />
       <PostList selectedCategory={selectedCategory} posts={edges} />
-      <Footer />
-    </Container>
+    </Template>
   );
 };
-
 
 export default IndexPage;
 
