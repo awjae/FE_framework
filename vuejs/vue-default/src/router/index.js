@@ -25,21 +25,28 @@ const routes = [
     // 4. prefetch를 꺼두면... 클릭하는 순간 about.js 를 받아서 캐시에 올린다.
     },
   {
-    path: '/Contact',
+    path: '/contact',
     name: 'Contact',
     // component: Contact
     component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/About.vue')
   },
   {
-    path: '/Basic',
+    path: '/basic',
     name: 'Basic',
     component: Basic
   },
   {
-    path: '/DataBinding',
+    path: '/dataBinding',
     name: 'DataBinding',
     // component: Contact
     component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/DataBinding.vue')
+  },
+  
+  {
+    path: '/dataBindingHTML',
+    name: 'DataBindingHTML',
+    // component: Contact
+    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/DataBindingHTML.vue')
   }
 ]
 
