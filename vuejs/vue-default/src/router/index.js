@@ -40,13 +40,24 @@ const routes = [
     name: 'DataBinding',
     // component: Contact
     component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/DataBinding.vue')
-  },
-  
+  },  
   {
     path: '/dataBindingHTML',
     name: 'DataBindingHTML',
     // component: Contact
     component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/DataBindingHTML.vue')
+  },
+  {
+    path: '/dataBindingipnuttext',
+    name: 'DataBindingInputText',
+    // component: Contact
+    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/DataBindingInputText.vue')
+  },
+  {
+    path: '/example',
+    name: 'Example',
+    // component: Contact
+    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/DataBindingInputText.vue')
   }
 ]
 
