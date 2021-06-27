@@ -4,6 +4,19 @@
     <input type="text" v-model="valueModel"/>
     <input type="number" v-model.number="valueModel2"/>
     <textarea v-model="valueModel3">안녕하세요</textarea>
+    <select v-model="city">
+        <option value="01">서울</option>
+        <option value="02">부산</option>
+        <option value="03">제주</option>
+    </select>
+    <label><input type="checkbox" value="서울" v-model="checked"/>서울</label>
+    <label><input type="checkbox" value="부산" v-model="checked"/>부산</label>
+    <label><input type="checkbox" value="제주" v-model="checked"/>제주</label>
+    <br>
+    <span>{{checked}}</span>
+    <label><input type="radio" v-model="picked" v-bind:value="radio1"/>서울</label>
+    <label><input type="radio" v-model="picked" v-bind:value="radio2"/>부산</label>
+    <label><input type="radio" v-model="picked" v-bind:value="radio3"/>제주</label>
 </div>
 </template>
 <script>
@@ -14,7 +27,14 @@ export default {
         return {
           valueModel: 'South Korea', //양방향 바인딩 
           valueModel2: 12,
-          valueModel3: '안녕하세요' 
+          valueModel3: '안녕하세요',
+          city: "02",
+          checked: [],
+          picked: "제주",
+          radio1: "제주",
+          radio2: "제주",
+          radio3: "제주",
+          picked: "",
         };
     },
     setup() {},
