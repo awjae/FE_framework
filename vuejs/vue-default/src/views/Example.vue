@@ -17,6 +17,9 @@
     <label><input type="radio" v-model="picked" v-bind:value="radio1"/>서울</label>
     <label><input type="radio" v-model="picked" v-bind:value="radio2"/>부산</label>
     <label><input type="radio" v-model="picked" v-bind:value="radio3"/>제주</label>
+    <img v-bind:src="url" />
+    <input type="text" v-model="textValue"/>
+    <button type="button" v-bind:disabled="textValue===''">Click</button>
 </div>
 </template>
 <script>
@@ -35,6 +38,8 @@ export default {
           radio2: "제주",
           radio3: "제주",
           picked: "",
+          url: 'https://kr.vuejs.org/images/logo.png',
+          textValue: '',
         };
     },
     setup() {},

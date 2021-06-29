@@ -48,12 +48,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/DataBindingHTML.vue')
   },
   {
-    path: '/dataBindingipnuttext',
-    name: 'DataBindingInputText',
-    // component: Contact
-    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/DataBindingInputText.vue')
-  },
-  {
     path: '/example',
     name: 'Example',
     // component: Contact
