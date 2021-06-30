@@ -20,7 +20,9 @@
     <img v-bind:src="url" />
     <input type="text" v-model="textValue"/>
     <button type="button" v-bind:disabled="textValue===''">Click</button>
-    <div class="container">Class Binding</div>
+    <div class="container" v-bind:class="{'active':isActive, 'txt-red':isRed}">Class Binding</div>
+    <div class="container" v-bind:class="[activeClass, redClass]">Class Binding</div>
+    <div v-bind:style="styleObject">인라인 스타일 바인드</div>
 </div>
 </template>
 <script>
@@ -41,6 +43,15 @@ export default {
           picked: "",
           url: 'https://kr.vuejs.org/images/logo.png',
           textValue: '',
+          isActive: true,
+          isRed: false,
+          activeClass: 'active',
+          redClass: 'txt-red',
+          styleObject: {
+              backgroundColor: 'blue',
+              color: 'red',
+              fontWeight: '600'
+          }
         };
     },
     setup() {},
@@ -53,5 +64,15 @@ export default {
 }
 </script>
 <style scoped>
-
+.container {
+    width: 100%;
+    height: 200px;
+}
+.active {
+    background-color: yellow;
+    font-weight: 600;
+}
+.txt-red {
+    color:red;
+}
 </style>
