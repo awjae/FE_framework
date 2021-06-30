@@ -20,6 +20,7 @@
     <img v-bind:src="url" />
     <input type="text" v-model="textValue"/>
     <button type="button" v-bind:disabled="textValue===''">Click</button>
+    <div class="container">Class Binding</div>
 </div>
 </template>
 <script>
