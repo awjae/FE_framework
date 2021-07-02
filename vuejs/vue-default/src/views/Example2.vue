@@ -20,8 +20,12 @@
                 </tr>
             </tbody>
         </table>
-        <h1 v-if="bRender">true 면 h1 보인다</h1>
-        <h1 v-else>false 면 h1 보인다</h1>
+        <h1 v-if="type==='A'">a 면 h1 보인다</h1>
+        <h1 v-else-if="type==='B'">b 면 h1 보인다</h1>
+        <h1 v-else-if="type==='C'">c 면 h1 보인다</h1>
+        <h1 v-else>other 면 h1 보인다</h1>
+        <h1 v-show="bRender">A</h1>
+        <!-- v-if , v-show 는 비슷하지만 내부적으로 동작이 다르다, dom의 유무 ==> show 가 성능상 더 빠르다 -->
     </div>
 </template>
 <script>
@@ -41,6 +45,7 @@ export default {
               { product_name: '마우스', price:9000, category: '전자제품' }
           ],
           bRender: false,
+          type: 'A'
         };
     },
     setup() {},
