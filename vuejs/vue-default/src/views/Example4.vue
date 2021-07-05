@@ -9,6 +9,10 @@
         <h1>{{ fullName }}</h1>
         <h1>{{ fullName }}</h1>
         <h1>{{ fullName }}</h1>
+        <input type="text" v-model.number="x1"/>
+        <input type="text" v-model.number="x2"/>
+        <input type="text" v-model="y"/>
+        <!-- <button type="button" @click="plusNumber">+</button> -->
     </div>
 </template>
 <script>
@@ -18,7 +22,10 @@ export default {
     data() {
         return {
           firstName: '유',
-          lastName: '재석'
+          lastName: '재석',
+          x1: 0,
+          x2: 0,
+          y: 0
         };
     },
     //computed 연산을 1번만 실행 (계산된 결과는 캐싱되고 종속성이 변경시 다시 계산됨)
@@ -27,6 +34,15 @@ export default {
             return this.lastName + this.firstName;
         }
     },
+    //꼭 필요한곳에만 쓸수 있도록
+    watch : {
+        x1() {
+            this.y = this.x1 + this.x2;
+        },
+        x2() {
+            this.y = this.x1 + this.x2;
+        },
+    },
     setup() {},
     created() {}, 
     mounted() {}, 
@@ -34,6 +50,9 @@ export default {
     methods: {
         getName() {
             return this.lastName + this.firstName;
+        },
+        plusNumber() {
+            this.y = this.x1 + this.x2;
         }
     }
 }
