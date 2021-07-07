@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Contact from '../views/Contact.vue'
+import Basic from '../views/Basic.vue'
+// import Contact from '../views/Contact.vue'
 
 const routes = [
   {
@@ -28,7 +29,7 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     // component: Contact
-    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/Contact.vue')
   },
   {
     path: '/basic',
@@ -51,7 +52,13 @@ const routes = [
     path: '/example',
     name: 'Example',
     // component: Contact
-    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/DataBindingInputText.vue')
+    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/Example.vue')
+  },
+  {
+    path: '/example5',
+    name: 'Example5',
+    // component: Contact
+    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/Example5.vue')
   }
 ]
 

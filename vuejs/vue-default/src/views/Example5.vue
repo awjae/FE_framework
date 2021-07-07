@@ -28,9 +28,10 @@ export default {
     mounted() {}, 
     unmounted() {},
     methods: {
-        saveUserInfo() {
+        saveUSerInfo() {
             if(this.name === '') {
-                return alert('사용자 이름을 입력하세요');
+                // return alert('사용자 이름을 입력하세요');
+                return this.$swal('사용자 이름을 입력하세요');
             }
             if(this.age === 0 || this.age === '') {
                 return alert('사용자 나이을 입력하세요');
