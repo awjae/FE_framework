@@ -28,4 +28,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 1. 라우터
 2. 코드스플리팅
-2. lazyloading & prefetching
+3. lazyloading & prefetching

@@ -59,6 +59,12 @@ const routes = [
     name: 'Example5',
     // component: Contact
     component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/Example5.vue')
+  },
+  {
+    path: '/serverdata',
+    name: 'ServerData',
+    // component: Contact
+    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/ServerData.vue')
   }
 ]
 
