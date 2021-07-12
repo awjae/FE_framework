@@ -5,6 +5,7 @@
         <h1>isOk : {{ isOk }}</h1>
         <h1>commentIdx : {{ commentIdx }}</h1>
         <h1>author name : {{ author.name }}</h1>
+        <button type="button" @click="childFunc">클릭</button>
     </div>
 </template>
 <script>
@@ -38,7 +39,11 @@ export default {
         console.log(this.commentIdx);
     }, // 컴포넌트의  dom들이 완성된순간
     unmounted() {},
-    methods: {}
+    methods: {
+        childFunc() {
+            alert('부모컴포넌트에서 발생시키기')
+        }
+    }
 }
 </script>
 <style scoped>

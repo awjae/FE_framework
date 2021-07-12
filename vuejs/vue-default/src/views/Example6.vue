@@ -3,7 +3,10 @@
     <div>
         <page-title title="부모 컴포넌트에서 전송할 페이지 타이틀" />
         <page-title :title="title" />
-        <ChildComponent :likes="likes" :isOk="isOk" :commentIdx="commentIdx" :author="author"/> <!-- 동적 바인딩을 하면 숫자필드, 불리언 필드로 데이터 전송 가능 -->
+        <!-- 동적 바인딩을 하면 숫자필드, 불리언 필드로 데이터 전송 가능 -->
+        <!-- <ChildComponent :likes="likes" :isOk="isOk" :commentIdx="commentIdx" :author="author"/>  -->
+        <button type="button" @click="callChildFunc" ref="child_btn">부모에 있는 클릭</button>
+        <ChildComponent ref="child_component" />
     </div>
 </template>
 <script>
@@ -26,7 +29,11 @@ export default {
     created() {}, //컴포넌트가 처음 실행된순간
     mounted() {}, // 컴포넌트의  dom들이 완성된순간
     unmounted() {},
-    methods: {}
+    methods: {
+        callChildFunc() {
+            this.$refs.child_component.$refs.child_btn.click(); //ref를 이용해서 접근하고 ref를 접근해서 클릭
+        }
+    }
 }
 </script>
 <style scoped>
