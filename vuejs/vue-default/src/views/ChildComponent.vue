@@ -41,7 +41,7 @@ export default {
     unmounted() {},
     methods: {
         childFunc() {
-            alert('부모컴포넌트에서 발생시키기')
+            alert('부모 컴포넌트내에서 자식 함수 발생시키기')
         }
     }
 }
