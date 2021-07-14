@@ -32,7 +32,9 @@ export default {
     methods: {
         callChildFunc() {
             // this.$refs.child_component.$refs.child_btn.click(); //ref를 이용해서 접근하고 ref를 접근해서 클릭
-            this.$refs.child_component.$refs.childFunc();
+            // this.$refs.child_component.$refs.childFunc();
+            this.$refs.child_component.msg = '부모 컴포넌트에서 변경한 메세지';
+            
         }
     }
 }

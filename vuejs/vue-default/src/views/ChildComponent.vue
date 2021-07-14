@@ -6,6 +6,7 @@
         <h1>commentIdx : {{ commentIdx }}</h1>
         <h1>author name : {{ author.name }}</h1>
         <button type="button" @click="childFunc">클릭</button>
+        <h1>{{ msg }}</h1>
     </div>
 </template>
 <script>
@@ -30,7 +31,8 @@ export default {
     components: {}, //하나의 컴포넌트는 다른 컴포넌트에서 쉽게 불러와 사용할 수 있다.
     data() {
         return {
-          title: 'Hello world' //양방향 바인딩 
+          title: 'Hello world',
+          msg: '자식 메세지', 
         };
     },
     setup() {},
