@@ -8,6 +8,7 @@
         <button type="button" @click="childFunc">클릭</button>
         <h1>{{ msg }}</h1>
         <button type="button" @click="sendFromChild"> 자식 컴포넌트 버튼</button>
+        <button type="button" @click="changeData">자식 데이터 바꾸기</button>
     </div>
 </template>
 <script>
@@ -49,6 +50,9 @@ export default {
         sendFromChild() {
             //$emit 자식에서 부모로 이벤트 발생시키기
             this.$emit('send-message', this.msg);
+        },
+        changeData() {
+            this.msg = '바꾼 자식 데이터';
         }
     }
 }

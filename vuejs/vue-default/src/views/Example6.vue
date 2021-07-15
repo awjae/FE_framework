@@ -7,7 +7,8 @@
         <!-- <ChildComponent :likes="likes" :isOk="isOk" :commentIdx="commentIdx" :author="author"/>  -->
         <button type="button" @click="callChildFunc" ref="child_btn">부모에 있는 클릭</button>
         <!-- <ChildComponent ref="child_component" /> -->
-        <childComponent @send-message="sendMessage"/>
+        <!-- <ChildComponent @send-message="sendMessage"/> -->
+        <ChildComponent ref="child_component" />
         <h1>{{ parentMessage }}</h1>
     </div>
 </template>
@@ -28,6 +29,11 @@ export default {
           parentMessage: '',
         };
     },
+    computed: {
+        com_msg() {
+            return this.$refs.child_component.msg;
+        }
+    },
     setup() {},
     created() {}, //컴포넌트가 처음 실행된순간
     mounted() {}, // 컴포넌트의  dom들이 완성된순간
@@ -38,10 +44,10 @@ export default {
             // this.$refs.child_component.$refs.childFunc();
             this.$refs.child_component.msg = '부모 컴포넌트에서 변경한 메세지';
         },
-        sendMessage(data) {
-            // alert(data);
-            this.parentMessage = (data);
-        }
+        // sendMessage(data) {
+        //     // alert(data);
+        //     this.parentMessage = (data);
+        // }
     }
 }
 </script>
