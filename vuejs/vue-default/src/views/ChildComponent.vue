@@ -7,6 +7,7 @@
         <h1>author name : {{ author.name }}</h1>
         <button type="button" @click="childFunc">클릭</button>
         <h1>{{ msg }}</h1>
+        <button type="button" @click="sendFromChild"> 자식 컴포넌트 버튼</button>
     </div>
 </template>
 <script>
@@ -26,7 +27,7 @@ export default {
         },
         author: {
             type: Object
-        }
+        },
     },
     components: {}, //하나의 컴포넌트는 다른 컴포넌트에서 쉽게 불러와 사용할 수 있다.
     data() {
@@ -44,6 +45,10 @@ export default {
     methods: {
         childFunc() {
             alert('부모 컴포넌트내에서 자식 함수 발생시키기')
+        },
+        sendFromChild() {
+            //$emit 자식에서 부모로 이벤트 발생시키기
+            this.$emit('send-message', this.msg);
         }
     }
 }
