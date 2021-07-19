@@ -65,6 +65,12 @@ const routes = [
     name: 'ServerData',
     // component: Contact
     component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/ServerData.vue')
+  },
+  {
+    path: '/slot',
+    name: 'Slot',
+    // component: Contact
+    component: () => import(/* webpackChunkName: "contact", webpackPrefetch: true */ '../views/SlotUseModalLayout.vue')
   }
 ]
 
