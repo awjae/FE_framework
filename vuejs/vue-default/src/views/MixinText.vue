@@ -4,9 +4,10 @@
     </div>
 </template>
 <script>
-import axios from 'axios';
+import ApiMixin from '../api.js';
 
 export default {
+    mixins: [ApiMixin], //모듈안에 methods 가 합쳐 완성 
     data() {
         return {
           productList: []
@@ -14,17 +15,8 @@ export default {
     },
     methods: {
         async getProductList() {
-            this.productList = await this.api('', 'get');
+            this.productList = await this.$callAPI('', 'get');
             console.log(this.productList);
-        },
-        async api(url, method, data) {
-            return (await axios({
-                method: method,
-                url: url,
-                data:data
-            }).catch(e => {
-                console.log(e);
-            })).data;
         }
     }
 }
