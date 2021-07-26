@@ -21,15 +21,15 @@ BABEL + EmtionJS + ESLint + Prettier
   - npm i react react-dom
   - npm i typescript @types/react @types/react-dom
   - 설치 후 package-lock.json과 node_modules 폴더가 생성됨
-2. .eslintrc
+2. .eslintrc (완)
   - eslint 설정 파일
   - 코드 점검 도구, 직접 설정하면 팀원간 의견 충돌이 있으니 prettier에 위임
   - npm i -D eslint
-3. .prettierrc
+3. .prettierrc (완)
   - prettier 설정 파일
   - 저장하면 알아서 코드를 수정해줌(에디터 설정 필요)
   - npm i -D prettier eslint-plugin-prettier eslint-config-prettier
-4. tsconfig.json
+4. tsconfig.json (완)
   - 타입스크립트 설정
   - 언어 문법과 자바스크립트 결과물이 어떻게 나와야하는지 설정하는 파일
   - lib은 ES2020, DOM(브라우저), module은 esnext처럼 최신 설정이지만 target은 es5로 IE 브라우저에서도 돌아갈 수 있게 변환
