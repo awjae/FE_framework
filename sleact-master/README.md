@@ -44,6 +44,9 @@ BABEL + EmtionJS + ESLint + Prettier
   - npm i -D css-loader style-loader @babel/core babel-loader @babel/preset-env @babel/preset-react @babel/preset-typescript
   - publicPath가 /dist/고 [name].js에서 [name]이 entry에 적힌대로 app으로 바뀌어 /dist/app.js가 결과물이 됨.
   - npm i -D ts-node @types/webpack @types/node @types/webpack-dev-server  // ts 도 관련 모듈을 설치해주어야함
+
+5.1 pages : 페이지, layouts : 공통, components : 짜잘짜잘한 것들 
+
 6. index.html 작성
   - 아이콘, 폰트, 파비콘같은 것은 슬랙에서 그대로 사용
   - client.tsx에 간단한 tsx 작성

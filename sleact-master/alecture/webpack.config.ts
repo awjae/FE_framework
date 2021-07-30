@@ -8,6 +8,7 @@ const isDevelopment = process.env.NODE_ENV !== 'production';
 
 
 //entry, module, output, plugin 중요 => 엔티리에 있는 파일을 가져와 모듈로 바꾸고 아웃풋으로 결과물을 출력
+//
 const config: webpack.Configuration = {
   name: 'sleact',
   mode: isDevelopment ? 'development' : 'production',
