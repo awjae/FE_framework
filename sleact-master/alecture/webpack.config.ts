@@ -76,7 +76,7 @@ const config: webpack.Configuration = {
     publicPath: '/dist/',
   },
   devServer: {
-    historyApiFallback: true, // react router
+    historyApiFallback: true, // react router GET 요청을 브라우저가 라우터로 인식 devServer.. 내가찾던기능
     port: 3090,
     publicPath: '/dist/',
     proxy: {
