@@ -62,6 +62,7 @@ const config: webpack.Configuration = {
     ],
   },
   plugins: [
+    //Typscript 와 ESLint 를 동시점검 => 개발용 서버 속도가 빨라짐
     new ForkTsCheckerWebpackPlugin({
       async: false,
       // eslint: {

@@ -98,6 +98,11 @@ BABEL + EmtionJS + ESLint + Prettier
 - npm i @loadable/component @types/loadable__component
 16. @pages/SignUp 작성 (완)
 
+17. 
+- useCallback = 반복적으로 사용되는 함수들, 리랜더링 될때마다 생성하면 비효율적이기 때문에 등자 (함수캐싱)
+- useMemo = 함수의 값을 캐싱
+
+
 ## 2일차
 17. 회원가입 axios로 진행
   - npm i axios
