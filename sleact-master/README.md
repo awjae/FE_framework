@@ -98,19 +98,19 @@ BABEL + EmtionJS + ESLint + Prettier
 - npm i @loadable/component @types/loadable__component
 16. @pages/SignUp 작성 (완)
 
-17. 
+17. (완)
 - useCallback = 반복적으로 사용되는 함수들, 리랜더링 될때마다 생성하면 비효율적이기 때문에 등자 (함수캐싱)
 - useMemo = 함수의 값을 캐싱
 
 
 ## 2일차
-17. 회원가입 axios로 진행
+17. 회원가입 axios로 진행  (완)
   - npm i axios
   - CORS 문제를 피하기 위해서 devServer에 proxy 세팅
   - CORS는 브라우저에서 다른 도메인의 서버로 요청을 보낼 때 발생
   - 같은 도메인의 서버로 요청을 보내거나, 서버끼리 요청을 보낼 때는 발생하지 않음
   - 따라서 같은 도메인인 proxy서버를 띄워 CORS를 피해갈 수 있음.
-18. useInput 커스텀 훅 만들기
+18. useInput 커스텀 훅 만들기 (완)
   - 커스텀 훅으로 훅들간에 중복된 것을 제거할 수 있음
   - 훅 내부에 훅을 작성할 수 있는 유일한 케이스
   - useCallback은 return 안에 들어있는 함수에 꼭 적용해주자
