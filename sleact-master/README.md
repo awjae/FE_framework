@@ -121,10 +121,10 @@ BABEL + EmtionJS + ESLint + Prettier
   - npm i swr
   - SWR에 fetcher(axios를 사용)를 달아줌.
   - 로그인했음을 증명하기 위해 withCredentials: true 잊으면 안 됨.
-20. @layouts/Workspace 작성
+20. @layouts/Workspace 작성  (완)
   - 눈에 띄는 구역 단위로 스타일드컴포넌트로 만들어둠.
   - 구역 내부의 태그들은 스타일드컴포넌트로 만들면 변수명 지어야 하니 css선택자로 선택
-21. 그라바타
+21. 그라바타  (완)
   - npm i gravatar @types/gravatar
   - Github같은 아이콘을 만들 수 있음
 22. typescript 정의
