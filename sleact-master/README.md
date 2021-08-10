@@ -127,9 +127,9 @@ BABEL + EmtionJS + ESLint + Prettier
 21. 그라바타  (완)
   - npm i gravatar @types/gravatar
   - Github같은 아이콘을 만들 수 있음
-22. typescript 정의
+22. typescript 정의  (완)
   - 기본적으로 변수, 매개변수, 리턴값에 타입을 붙여주면 됨.
-  - 남이 타이핑해둔 것 분석하는 게 어려움
+  - 남이 타이핑해둔 것 분석하는 게 어려움 !! // 가독성이 떨어진다. 어쩔수없는 부분. 트레이드오프를 잘 생각해서 선택
   - Go to Type Definition
   - 자바스크립트 라이브러리 작성자와는 다른 사람이 만든 ts 라이브러리가 @types로 시작하는 것들
 23. @components/DMList 작성
