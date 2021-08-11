@@ -132,7 +132,7 @@ BABEL + EmtionJS + ESLint + Prettier
   - 남이 타이핑해둔 것 분석하는 게 어려움 !! // 가독성이 떨어진다. 어쩔수없는 부분. 트레이드오프를 잘 생각해서 선택
   - Go to Type Definition
   - 자바스크립트 라이브러리 작성자와는 다른 사람이 만든 ts 라이브러리가 @types로 시작하는 것들
-23. @components/DMList 작성
+23. @components/DMList 작성 (완)
   - 현재 채널 참여자 목록 가져오기
 24. @pages/DirectMessage 작성
   - Header와 ChatList, ChatBox로 구성
