@@ -134,7 +134,7 @@ BABEL + EmtionJS + ESLint + Prettier
   - 자바스크립트 라이브러리 작성자와는 다른 사람이 만든 ts 라이브러리가 @types로 시작하는 것들
 23. @components/DMList 작성 (완)
   - 현재 채널 참여자 목록 가져오기
-24. @pages/DirectMessage 작성
+24. @pages/DirectMessage 작성 (완)
   - Header와 ChatList, ChatBox로 구성
 25. @components/ChatBox 먼저 작성
   - react-mentions 활용
