@@ -136,7 +136,7 @@ BABEL + EmtionJS + ESLint + Prettier
   - 현재 채널 참여자 목록 가져오기
 24. @pages/DirectMessage 작성 (완)
   - Header와 ChatList, ChatBox로 구성
-25. @components/ChatBox 먼저 작성
+25. @components/ChatBox 먼저 작성 (완)
   - react-mentions 활용
   - DM에서는 멘션 기능이 없지만 Channel에서는 있을 것
 26. DM 보내보기
