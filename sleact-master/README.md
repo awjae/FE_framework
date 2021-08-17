@@ -139,7 +139,7 @@ BABEL + EmtionJS + ESLint + Prettier
 25. @components/ChatBox 먼저 작성 (완)
   - react-mentions 활용
   - DM에서는 멘션 기능이 없지만 Channel에서는 있을 것
-26. DM 보내보기
+26. DM 보내보기 (완)
   - optimistic UI
   - 먼저 프론트에서 표시하고, 서버로는 그 다음에 요청보냄
   - 요청 실패하는 순간 프론트에서 제거하고 에러 메시지 띄움
