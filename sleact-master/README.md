@@ -150,7 +150,7 @@ BABEL + EmtionJS + ESLint + Prettier
   - 이 함수의 매개변수로 페이지가 들어있어서 현재 몇 페이지인지 알 수 있음.
 
 ## 3일차
-28. Workspace에 소켓 연결하기
+28. Workspace에 소켓 연결하기 (완)
   - socket.emit이 클라이언트에서 서버로, socket.on이 서버에서 클라이언트로
 29. DMList에 onlineList, dm 이벤트 연결
 30. @components/ChatList 작성 및 @components/Chat 구현
