@@ -107,3 +107,6 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
+
+### https://svelte.dev/tutorial/spread-props

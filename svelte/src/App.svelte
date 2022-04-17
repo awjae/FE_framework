@@ -4,6 +4,8 @@
 	$: {
 		console.log("useEffect 와 유사하게 사용 가능", name)
 	}
+
+	import Nested from './Nested.svelte';
 </script>
 
 <main>
@@ -11,6 +13,7 @@
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 	<button on:click={() => name = "바꾼이름"}>이름 바꾸기</button>
 	<p>$rename { rename }</p>
+	<Nested answer={42}></Nested>
 </main>
 
 <style>
