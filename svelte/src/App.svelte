@@ -1,11 +1,16 @@
 <script>
 	let name = "기본 이름";
+	$: rename = "딸러 이름" + name;
+	$: {
+		console.log("useEffect 와 유사하게 사용 가능", name)
+	}
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 	<button on:click={() => name = "바꾼이름"}>이름 바꾸기</button>
+	<p>$rename { rename }</p>
 </main>
 
 <style>
