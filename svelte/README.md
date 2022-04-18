@@ -109,4 +109,4 @@ surge public my-project.surge.sh
 ```
 
 
-### https://svelte.dev/tutorial/spread-props
+### https://svelte.dev/tutorial/keyed-each-blocks

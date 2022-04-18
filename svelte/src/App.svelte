@@ -1,11 +1,25 @@
 <script>
+	import Nested from './Nested.svelte';
+	import Thing from './Thing.svelte';
+	
 	let name = "기본 이름";
 	$: rename = "딸러 이름" + name;
 	$: {
 		console.log("useEffect 와 유사하게 사용 가능", name)
 	}
 
-	import Nested from './Nested.svelte';
+	let user = { loggedIn: false };
+	function toggle() {
+		user.loggedIn = !user.loggedIn;
+	}
+
+	let things = [
+		{ id: 1, name: 'apple' },
+		{ id: 2, name: 'banana' },
+		{ id: 3, name: 'carrot' },
+		{ id: 4, name: 'doughnut' },
+		{ id: 5, name: 'egg' },
+	];
 </script>
 
 <main>
@@ -14,6 +28,18 @@
 	<button on:click={() => name = "바꾼이름"}>이름 바꾸기</button>
 	<p>$rename { rename }</p>
 	<Nested answer={42}></Nested>
+	{#if user.loggedIn}
+		<button on:click={toggle}>
+			Log out
+		</button>
+	{:else}
+		<button on:click={toggle}>
+			Log in
+		</button>
+	{/if}
+	{#each things as thing}
+		<Thing name={thing.name}/>
+	{/each}
 </main>
 
 <style>
