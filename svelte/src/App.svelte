@@ -20,6 +20,18 @@
 		{ id: 4, name: 'doughnut' },
 		{ id: 5, name: 'egg' },
 	];
+
+	async function getRandomNumber() {
+		const res = await fetch(`/tutorial/random-number`);
+		const text = await res.text();
+
+		if (res.ok) {
+			return text;
+		} else {
+			throw new Error(text);
+		}
+	}
+	let promise = getRandomNumber();
 </script>
 
 <main>
@@ -40,6 +52,17 @@
 	{#each things as thing}
 		<Thing name={thing.name}/>
 	{/each}
+
+	<br>
+
+	{#await promise}
+		<p>...waiting</p>
+	{:then number}
+		<p>The number is {number}</p>
+	{:catch error}
+		<p style="color: red">{error.message}</p>
+	{/await}
+
 </main>
 
 <style>
