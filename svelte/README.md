@@ -109,4 +109,4 @@ surge public my-project.surge.sh
 ```
 
 
-### https://svelte.dev/tutorial/keyed-each-blocks
+### https://svelte.dev/tutorial/inline-handlers

@@ -32,6 +32,13 @@
 		}
 	}
 	let promise = getRandomNumber();
+
+	let m = { x: 0, y: 0 };
+
+	function handleMousemove(event) {
+		m.x = event.clientX;
+		m.y = event.clientY;
+	}
 </script>
 
 <main>
@@ -63,6 +70,9 @@
 		<p style="color: red">{error.message}</p>
 	{/await}
 
+	<div on:mousemove="{e => m = { x: e.clientX, y: e.clientY }}">
+		The mouse position is {m.x} x {m.y}
+	</div>
 </main>
 
 <style>
