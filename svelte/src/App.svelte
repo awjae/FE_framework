@@ -1,6 +1,8 @@
 <script>
 	import Nested from './Nested.svelte';
 	import Thing from './Thing.svelte';
+	import Inner from './Inner.svelte';
+
 	
 	let name = "기본 이름";
 	$: rename = "딸러 이름" + name;
@@ -42,6 +44,11 @@
 	function handleClick() {
 		alert('no more alerts')
 	}
+
+	import Outer from './Outer.svelte';
+	function handleMessage(event) {
+		alert(event.detail.text);
+	}
 </script>
 
 <main>
@@ -79,6 +86,8 @@
 	<button on:click|once={handleClick}>
 		Click me
 	</button>
+
+	<Outer on:message={handleMessage}/>
 </main>
 
 <style>

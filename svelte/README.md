@@ -109,4 +109,4 @@ surge public my-project.surge.sh
 ```
 
 
-### https://svelte.dev/tutorial/inline-handlers
+### https://svelte.dev/tutorial/component-events
