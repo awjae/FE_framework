@@ -1,7 +1,6 @@
 <script>
 	import Nested from './Nested.svelte';
 	import Thing from './Thing.svelte';
-	import Inner from './Inner.svelte';
 
 	
 	let name = "기본 이름";
@@ -47,6 +46,7 @@
 
 	import Outer from './Outer.svelte';
 	function handleMessage(event) {
+		console.log(event)
 		alert(event.detail.text);
 	}
 </script>
