@@ -110,4 +110,4 @@ surge public my-project.surge.sh
 
 
 ### https://svelte.dev/tutorial/component-events
-### 사내에서 커밋할때 계정 확인 -> 신규 커밋 테스트
+### 사내에서 커밋할때 계정 확인 -> 신규 커밋 테스트 -> 이름변경
