@@ -109,5 +109,5 @@ surge public my-project.surge.sh
 ```
 
 
-### https://svelte.dev/tutorial/component-events
+### https://svelte.dev/tutorial/onmount
 ### 사내에서 커밋할때 계정 확인
