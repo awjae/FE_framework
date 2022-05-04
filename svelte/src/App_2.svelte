@@ -1,6 +1,6 @@
 <script>
     import Bindings from "./components/Bindings.svelte";
-    import { onMount, onDestroy } from 'svelte';
+    import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
 
 	let photos = [];
     onMount(async () => {
@@ -12,6 +12,17 @@
 	const interval = setInterval(() => counter += 1, 1000);
 
 	onDestroy(() => clearInterval(interval));
+
+    let div;
+    let autoscroll;
+
+    beforeUpdate(() => {
+        autoscroll = div && (div.offsetHeight + div.scrollTop) > (div.scrollHeight - 20);
+    });
+
+    afterUpdate(() => {
+        if (autoscroll) div.scrollTo(0, div.scrollHeight);
+    });
 </script>
 <main>
     <h2>Page 2</h2>

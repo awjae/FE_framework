@@ -109,10 +109,5 @@ surge public my-project.surge.sh
 ```
 
 
-<<<<<<< HEAD
-### https://svelte.dev/tutorial/onmount
+### https://svelte.dev/tutorial/update
 ### 사내에서 커밋할때 계정 확인
-=======
-### https://svelte.dev/tutorial/component-events
-### 사내에서 커밋할때 계정 확인 -> 신규 커밋 테스트 -> 이름변경 -> 이메일 제거 -> 글로벌, 로컬 계정 설정 
->>>>>>> 4d5994a804fefbf37e249bd8f9e527caf86eb6dd
