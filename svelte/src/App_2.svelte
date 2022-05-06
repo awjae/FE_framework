@@ -4,8 +4,18 @@
 
 	let photos = [];
     onMount(async () => {
-		const res = await fetch(`/tutorial/api/album`);
-		photos = await res.json();
+		const res = await fetch(`https://fakestoreapi.com/products/1`);
+		const result = await res.json();
+        photos = [
+            {
+                thumbnailUrl: 'http://www.gameple.co.kr/news/photo/202204/202396_204556_2732.png',
+                title: '엘가시아'
+            },
+            {
+                thumbnailUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaYb1yNB5j1NiAvn3QJNSjQ8T2-gyi2729kw&usqp=CAU',
+                title: '라우리엘'
+            }
+        ];
 	});
 
     let counter = 0;
