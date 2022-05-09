@@ -110,4 +110,3 @@ surge public my-project.surge.sh
 
 
 ### https://svelte.dev/tutorial/update
-### 사내에서 커밋할때 계정 확인

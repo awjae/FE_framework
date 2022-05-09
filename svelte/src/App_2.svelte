@@ -1,6 +1,6 @@
 <script>
     import Bindings from "./components/Bindings.svelte";
-    import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
+    import { onMount, onDestroy, beforeUpdate, afterUpdate, tick } from 'svelte';
 
 	let photos = [];
     onMount(async () => {
@@ -33,6 +33,19 @@
     afterUpdate(() => {
         if (autoscroll) div.scrollTo(0, div.scrollHeight);
     });
+
+    // tick 매우 독특한 친구 : 반응성이 적용될때 까지 기다려 // 테스크를 완료하고 나서 화면이 갱신 되도록 외어 있기 때문
+    // 
+    let name = 'man';
+      
+    async function handler() {
+        name = 'man ?';
+
+        await tick();   
+
+        const h1 = document.querySelector('h1');
+        console.log(h1.innerText); 
+    }
 </script>
 <main>
     <h2>Page 2</h2>
@@ -49,7 +62,7 @@
         {/each}
         <p>{counter}</p>
     </div>
-    
+    <h1 on:click={handler}>Are you {name}</h1>
 </main>
 <style>
 
