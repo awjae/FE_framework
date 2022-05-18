@@ -109,4 +109,4 @@ surge public my-project.surge.sh
 ```
 
 
-### https://svelte.dev/tutorial/update
+### https://svelte.dev/tutorial/readable-stores
