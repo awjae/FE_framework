@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\n4178\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  .;C:\Program Files (x86)\WareValley\Chakra Max Client V2\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\Softcamp\SDK;C:\WINDOWS\Softcamp\SDS\x64;C:\WINDOWS\Softcamp\SDS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\SoftCamp\SDK\x64;D:\project\care-call-master\gradle\wrapper\gradle-6.5.1\bin;C:\platform-tools;C:\Users\n4178\AppData\Local\Microsoft\WindowsApps;C:\Users\n4178\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\n4178\AppData\Roaming\npm;C:\Program Files\Bandizip\;C:\Program Files\JetBrains\WebStorm 2020.3.2\bin;C:\Users\n4178\AppData\Local\Programs\Fiddler;C:\Users\n4178\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: self signed certificate in certificate chain
+      at TLSSocket.onConnectSecure (_tls_wrap.js:1497:34)
+      at TLSSocket.emit (events.js:315:20)
+      at TLSSocket._finishInit (_tls_wrap.js:932:8)
+      at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:706:12)
+
+npm manifest: 
+  {
+    "name": "reactnativeinit",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "~45.0.0",
+      "expo-status-bar": "~1.3.0",
+      "react": "17.0.2",
+      "react-dom": "17.0.2",
+      "react-native": "0.68.2",
+      "react-native-web": "0.17.7"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.9"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
