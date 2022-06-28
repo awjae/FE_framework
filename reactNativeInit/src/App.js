@@ -2,8 +2,9 @@
 import styled, { ThemeProvider } from 'styled-components/native';
 import { theme } from './theme';
 import { StatusBar } from 'react-native';
+import Input from './components/Input';
 
-const Container= styled.SafeAreaView`
+const Container= styled.View`
   flex: 1;
   background-color: ${({theme}) => theme.background};
   align-items: center;
@@ -28,10 +29,12 @@ export default function App() {
     // </View>
     <ThemeProvider theme={theme}>
       <Container>
-        <Title>TODO List</Title>
         <StatusBar 
           barStyle="light-content"
-          backgroundColor={theme.background}></StatusBar>
+          backgroundColor={theme.background}>
+        </StatusBar>
+        <Title>TODO List</Title>
+        <Input></Input>
       </Container>  
     </ThemeProvider>
   );
