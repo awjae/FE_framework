@@ -4,6 +4,8 @@ import { theme } from './theme';
 import { StatusBar } from 'react-native';
 import Input from './components/Input';
 import { useState } from 'react';
+import IconButton from './components/IconButton';
+import { icons } from './icons';
 
 const Container= styled.View`
   flex: 1;
@@ -47,6 +49,10 @@ export default function App() {
           onChangeText={text => setNewTask(text)}
           onSubmitEditing={addTask}
         ></Input>
+        <IconButton icon={icons.check} onPress={() => alert('check')}></IconButton>
+        <IconButton icon={icons.unCheck} onPress={() => alert('unCheck')}></IconButton>
+        <IconButton icon={icons.edit} onPress={() => alert('edite')}></IconButton>
+        <IconButton icon={icons.delete} onPress={() => alert('delete')}></IconButton>
       </Container>  
     </ThemeProvider>
   );
