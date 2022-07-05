@@ -8,7 +8,7 @@ import IconButton from './components/IconButton';
 import { icons } from './icons';
 import Task from './components/Task';
 
-const Container= styled.View`
+const Container= styled.SafeAreaView`
   flex: 1;
   background-color: ${({theme}) => theme.background};
   align-items: center;
@@ -38,6 +38,13 @@ export default function App() {
   }
   const width = Dimensions.get('window').width;
 
+  const tempData = {
+    '1': { id: '1', text: 'React Native', completed: false },
+    '2': { id: '2', text: 'Expo', completed: true },
+    '3': { id: '3', text: 'Javascript', completed: false }
+  };
+
+  const [tasks, setTasks] = useState(tempData);
 
   return (
     // <View style={styles.container}>
@@ -62,15 +69,14 @@ export default function App() {
         <IconButton icon={icons.unCheck} onPress={() => alert('unCheck')}></IconButton>
         <IconButton icon={icons.edit} onPress={() => alert('edite')}></IconButton>
         <IconButton icon={icons.delete} onPress={() => alert('delete')}></IconButton>
-        <List width={width}>>
-          <Task text="test1"></Task>
-          <Task text="test2"></Task>
-          <Task text="test3"></Task>
-          <Task text="test4"></Task>
-          <Task text="test5"></Task>
-          <Task text="test6"></Task>
-          <Task text="test7"></Task>
-          <Task text="test8"></Task>
+        <List width={width}>
+          {
+            Object.values(tasks)
+              .reverse()
+              .map(item => {
+                <Task key={item.id} text= {item.text} />
+              })
+          }
         </List>
       </Container>  
     </ThemeProvider>
