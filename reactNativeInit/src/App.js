@@ -33,9 +33,16 @@ const List = styled.ScrollView`
 export default function App() {
   const [newTask, setNewTask] = useState('');
   const addTask = () => {
-    alert(newTask);
+    if (newTask.length < 1) {
+      return;
+    }
+    const ID = Date.now().toString();
+    const newTaskObject = {
+      [ID]: { id: ID, text: newTask, completed: false },
+    };
     setNewTask('');
-  }
+    storeData({ ...tasks, ...newTaskObject });
+  };
   const width = Dimensions.get('window').width;
 
   const tempData = {
@@ -45,6 +52,8 @@ export default function App() {
   };
 
   const [tasks, setTasks] = useState(tempData);
+
+  
 
   return (
     // <View style={styles.container}>
