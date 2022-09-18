@@ -2,3 +2,6 @@
 'Expo는 JavaScript나 TypeScript로 iOS,Android,Web 앱을 개발할 수 있는 프레임워크이자 플랫폼이야!' 
 2. 안드로이드, ios 앱을 윈도우, 맥, 리눅스에서 만들 수 있게 해준다.
 3. 무료 , 유료 라이센스가 있다. 사용전 확인해보자
+
+------------
+https://reactnative.dev/docs/tutorial
