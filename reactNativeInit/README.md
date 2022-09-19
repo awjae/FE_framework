@@ -5,3 +5,4 @@
 
 ------------
 https://reactnative.dev/docs/tutorial
+https://reactnative.dev/docs/components-and-apis
