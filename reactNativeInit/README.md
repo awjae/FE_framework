@@ -5,6 +5,7 @@
 
 ------------
 https://reactnative.dev/docs/tutorial
+https://reactnative.dev/docs/components-and-apis
 
 
 1. Basic Components - Text View Image TextInput ScrollView StySheet
@@ -12,3 +13,4 @@ https://reactnative.dev/docs/tutorial
 3. List Views - FlatList SectionList
 4. AOS - BackHandler, DrawerLayourAndroid, PermissionAndroid, ToastAndroid / IOS - ActionSheetIOS
 5. Others - ActivityIndicator, Alert, Animated, Dimesions, KeyboardAvoidingView, Linking, Modal, PixelRatio, RefreshControl, StatusBar
+
