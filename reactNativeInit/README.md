@@ -14,3 +14,9 @@ https://reactnative.dev/docs/components-and-apis
 4. AOS - BackHandler, DrawerLayourAndroid, PermissionAndroid, ToastAndroid / IOS - ActionSheetIOS
 5. Others - ActivityIndicator, Alert, Animated, Dimesions, KeyboardAvoidingView, Linking, Modal, PixelRatio, RefreshControl, StatusBar
 
+
+----
+
+매우 제한적
+window = expo 
+web = 기능이 온전하지 않음
