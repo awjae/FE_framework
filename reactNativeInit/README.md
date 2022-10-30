@@ -20,3 +20,5 @@ https://reactnative.dev/docs/components-and-apis
 매우 제한적
 window = expo 
 web = 기능이 온전하지 않음
+display = flex만
+overflow 같은 css 기능은 동작하지않음 (native)
