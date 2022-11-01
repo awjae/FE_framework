@@ -4,7 +4,6 @@ import { Button, SafeAreaView, StyleSheet, View, PermissionsAndroid, TouchableOp
 import ListHorizontal from '../components/ListHorizontal';
 import CameraLayer from '../components/CameraLayer';
 
-
 const requestCameraPermission = async () => {
   try {
     const granted = await PermissionsAndroid.request(
@@ -28,7 +27,7 @@ const requestCameraPermission = async () => {
   }
 };
 
-const DisplayAnImage = () => {
+const main = () => {
   
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -50,4 +49,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default DisplayAnImage;
+export default main;
