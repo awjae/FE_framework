@@ -1,7 +1,7 @@
 
 import { Image, ScrollView, StyleSheet } from 'react-native';
 
-function ListHorizontal() {
+const ListHorizontal = () => {
   return (
     <ScrollView 
         style={styles.container}
