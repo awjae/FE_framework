@@ -22,3 +22,4 @@ window = expo
 web = 기능이 온전하지 않음
 display = flex만
 overflow 같은 css 기능은 동작하지않음 (native)
+시스템 에러 디버깅이 매우 어려움
