@@ -26,6 +26,9 @@
 	</h2>
 
 	<Counter />
+
+	<a href="/about">About my site</a>
+	<a href="/step">About my steps</a>
 </section>
 
 <style>
