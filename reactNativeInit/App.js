@@ -1,3 +1,3 @@
 // import App from './src/App';
-import App2 from './src/App2';
-export default App2;
+import App from './src/Router';
+export default App;

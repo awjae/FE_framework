@@ -6,3 +6,20 @@
 ------------
 https://reactnative.dev/docs/tutorial
 https://reactnative.dev/docs/components-and-apis
+
+
+1. Basic Components - Text View Image TextInput ScrollView StySheet
+2. User Interface - Button Switch
+3. List Views - FlatList SectionList
+4. AOS - BackHandler, DrawerLayourAndroid, PermissionAndroid, ToastAndroid / IOS - ActionSheetIOS
+5. Others - ActivityIndicator, Alert, Animated, Dimesions, KeyboardAvoidingView, Linking, Modal, PixelRatio, RefreshControl, StatusBar
+
+
+----
+
+매우 제한적
+window = expo 
+web = 기능이 온전하지 않음
+display = flex만
+overflow 같은 css 기능은 동작하지않음 (native)
+시스템 에러 디버깅이 매우 어려움

@@ -1,70 +1,50 @@
-// import React from 'react';
-// import { Text, View } from 'react-native';
+import React from 'react';
+import { Text, View, Image, StyleSheet, TextInput  } from 'react-native';
 
-// const App2 = () => {
-//   return (
-//     <View
-//       style={{
-//         flex: 1,
-//         justifyContent: "center",
-//         alignItems: "center"
-//       }}>
-//       <Text>Hello, world!</Text>
-//     </View>
-//   )
-// }
-// export default App2;
+const App2 = () => {
+  const [text, onChangeText] = React.useState("Useless Text");
+  const [number, onChangeNumber] = React.useState(null);
 
-import React, { Component } from 'react'
-import {
-  StyleSheet,
-  TouchableOpacity,
-  Text,
-  View,
-} from 'react-native'
-
-class App2 extends Component {
-  state = {
-    count: 0
-  }
-
-  onPress = () => {
-    this.setState({
-      count: this.state.count + 1
-    })
-  }
-
- render() {
-    return (
-      <View style={styles.container}>
-        <TouchableOpacity
-         style={styles.button}
-         onPress={this.onPress}
-        >
-         <Text>Click me</Text>
-        </TouchableOpacity>
-        <View>
-          <Text>
-            You clicked { this.state.count } times
-          </Text>
-        </View>
-      </View>
-    )
-  }
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
+      }}>
+      <Text>Hello, world!</Text>
+      <Image
+        style={styles.tinyLogo}
+        source={'https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg'}
+      />
+      <TextInput
+        style={styles.input}
+        onChangeText={onChangeText}
+        value={text}
+      />
+      <TextInput
+        style={styles.input}
+        onChangeText={onChangeNumber}
+        value={number}
+        placeholder="useless placeholder"
+        keyboardType="numeric"
+      />
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+  // container: {
+  //   paddingTop: 50,
+  // },
+  tinyLogo: {
+    width: 50,
+    height: 50,
   },
-  button: {
-    alignItems: 'center',
-    backgroundColor: '#DDDDDD',
-    padding: 10,
-    marginBottom: 10
-  }
-})
+  // logo: {
+  //   width: 66,
+  //   height: 58,
+  // },
+});
 
 export default App2;
