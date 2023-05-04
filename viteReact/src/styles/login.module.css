@@ -1,0 +1,85 @@
+.bg {
+  background-image: url('../assets/bg_ing_2x.webp');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bi {
+  margin: 0 auto;
+  background-image: url('../assets/main_txt_2x.webp');
+  background-size: cover;
+  width: 398px;
+  height: 186px;
+  margin-bottom: 40px;
+  text-indent: -9999px;
+}
+.loginForm {
+  width: 520px;
+  padding: 44px 50px 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: rgba(8, 15, 34, 0.6);
+}
+.loginForm > p:first-of-type {
+  margin-bottom: 36px;
+  font-size: 20px;
+  color: #5e9bf5;
+  text-align: center;
+}
+.loginForm > div,  .loginForm label {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 150px;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  font-family: 'Pretendard';
+  display: flex;
+  align-items: center;
+}
+.focus {
+  border: solid 1px #5e9bf5 !important;
+}
+.loginForm input {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-family: 'Pretendard_bold';
+  color: #fff;
+  width: 100%;
+} 
+.loginForm button {
+  margin-top: 20px;
+  width: 100%;
+  height: 68px;
+  border-radius: 150px;
+  border: none;
+  background-color: #3a84f3;
+  font-family: 'Pretendard_bold';
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  color: #fff;
+}
+.idInput {
+  margin-right: 20px;
+  background-image: url('../assets/User.svg');
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.idInput + input:focus-visible {
+  outline: none;
+}
+.pwInput {
+  margin-right: 20px;
+  background-image: url('../assets/LockSimple.svg');
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.pwInput + input:focus-visible {
+  outline: none;
+}

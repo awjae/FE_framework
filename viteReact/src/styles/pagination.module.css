@@ -1,0 +1,29 @@
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.paginationWrapper button {
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.paginationWrapper button img {
+  width: 24px;
+  height: 24px;
+}
+.page {
+  margin: 0 10px;
+  font-family: Pretendard_bold;
+  font-size: 13px;
+  border: solid 1px #fff;
+} 
+.page .active {
+  border-radius: 2px;
+  border: solid 1px #217aff;
+  font-weight: bold;
+  color: #217aff;
+}
